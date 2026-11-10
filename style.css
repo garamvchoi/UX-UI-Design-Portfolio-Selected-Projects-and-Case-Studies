@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #242424;
+  background: #faf9f6;
+  line-height: 1.6;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+}
+
+.logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  padding: 130px 12% 150px;
+  max-width: 1100px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 1.1;
+  max-width: 850px;
+}
+
+.hero h1 span {
+  color: #777;
+}
+
+.intro {
+  max-width: 550px;
+  margin: 28px 0;
+  color: #666;
+}
+
+.button {
+  display: inline-block;
+  background: #242424;
+  color: white;
+  padding: 13px 24px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.projects {
+  padding: 80px 8%;
+}
+
+.projects h2 {
+  margin-bottom: 40px;
+}
+
+.project {
+  margin-bottom: 70px;
+  max-width: 850px;
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #e8e6e0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 12px;
+  color: inherit;
+}
+
+footer {
+  padding: 40px 8%;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    padding: 20px 6%;
+  }
+
+  .nav-links {
+    gap: 14px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 90px 7%;
+  }
+
+  .projects {
+    padding: 60px 7%;
+  }
+}
